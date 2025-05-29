@@ -24,7 +24,8 @@ export async function POST(req: Request) {
             .string()
             .describe("The content or resource to add to the knowledge base."),
         }),
-        execute: async ({ content }) => createResource({ content }),
+        execute: async ({ content }) =>
+          createResource({ content, fileName: null }),
       }),
       getInformation: tool({
         description: `get information from your knowledge base to answer questions.`,
