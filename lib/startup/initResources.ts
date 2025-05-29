@@ -3,7 +3,6 @@ import { resources } from "@/lib/db/schema/resources";
 import { embeddings as embeddingsTable } from "@/lib/db/schema/embeddings";
 import { generateEmbeddings } from "@/lib/ai/embeddings";
 import { eq } from "drizzle-orm";
-import { parseHTML } from "linkedom";
 import { Readability } from "@mozilla/readability";
 import { JSDOM } from "jsdom";
 import { extractTextFromPDF } from "@/app/api/upload/route";
